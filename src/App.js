@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
   }
@@ -30,9 +30,10 @@ class App extends Component {
     );
     return (
       <div className="App">
-        <h1> Enthuse Tech Dashboard </h1>
+        <img alt="logo" src={`https://id.enthuse-test.com/sso/static/common/images/enthuse/enthuse_logo_horizontal.svg`} /> 
+        <h1> Metrics Dashboard </h1>
         <SearchBox
-          placeholder='search monsters'
+          placeholder='search metrics'
           handleChange={this.handleChange}
         />
         <CardList monsters={filteredMonsters}/>
