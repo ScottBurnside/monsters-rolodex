@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://4ddc-86-180-175-202.eu.ngrok.io/v1/metrics')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
   }
