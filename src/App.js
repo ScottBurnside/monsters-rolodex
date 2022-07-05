@@ -38,7 +38,7 @@ class App extends Component {
     const costData = {labels: costsLabels, data: costsValues};
     return (
       <div className="App">
-        <img alt="logo" src={`https://id.enthuse-test.com/sso/static/common/images/enthuse/enthuse_logo_horizontal.svg`} /> 
+        <img alt="logo" src={`https://id.enthuse-test.com/sso/static/common/images/enthuse/enthuse_logo_horizontal.svg`}  /> 
         <h1> Metrics Dashboard </h1>
         <SearchBox
           placeholder='search metrics'

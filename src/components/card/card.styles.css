@@ -1,16 +1,30 @@
+.card-value{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-label{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 .card-container {
-    --display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 2px solid grey;
-    border-radius: 5px;
-    padding: 25px;
-    cursor: pointer;
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform 0.25s ease-out;
-  }
+  --display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
   .card-container img{
     height:100px;
