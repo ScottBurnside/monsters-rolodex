@@ -1,13 +1,3 @@
-.card-value{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.card-label{
-  font-weight: bold;
-  font-size: 20px;
-}
-
 
 .card-container {
   --display: flex;
@@ -34,3 +24,13 @@
     transform: scale(1.05);
   }
   
+  .card-value{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-label{
+    font-weight: bold;
+    font-size: 20px;
+  }
