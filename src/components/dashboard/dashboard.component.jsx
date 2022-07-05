@@ -6,14 +6,13 @@ import { Pie, Line } from 'react-chartjs-2';
 import './dashboard.styles.css';
 
 export const Dashboard = props => (
-    <div class="dashboard">
-        <h1>Dashboard</h1>
+    <div class="list">
         <div class="dashboard-card">
             <div class="dashboard-card-header">
                 <div class="header-text">
                     <span>Jira</span>
                 </div>
-                <div class="team-button">
+                {/* <div class="team-button">
                     <span>ELK</span>
                 </div>
                 <div class="team-button">
@@ -27,7 +26,7 @@ export const Dashboard = props => (
                 </div>
                 <div class="team-button">
                     <span>Gizmo</span>
-                </div>
+                </div> */}
             </div>
             <div class="dashboard-card-content">
                 <div class="info-content content-child">
@@ -100,7 +99,7 @@ export const Dashboard = props => (
                 <div class="header-text">
                     <span>Reg</span>
                 </div>
-                <div class="team-button">
+                {/* <div class="team-button">
                     <span>SSO</span>
                 </div>
                 <div class="team-button">
@@ -114,7 +113,7 @@ export const Dashboard = props => (
                 </div>
                 <div class="team-button">
                     <span>Reg</span>
-                </div>
+                </div> */}
             </div>
             <div class="dashboard-card-content">
                 <div class="content-child">
@@ -178,7 +177,7 @@ export const Dashboard = props => (
                 <div class="header-text">
                     <span>AWS</span>
                 </div>
-                <div class="team-button">
+                {/* <div class="team-button">
                     <span>ELK</span>
                 </div>
                 <div class="team-button">
@@ -192,7 +191,7 @@ export const Dashboard = props => (
                 </div>
                 <div class="team-button">
                     <span>Gizmo</span>
-                </div>
+                </div> */}
             </div>
             <div class="dashboard-card-content">
                 <div class="content-child">

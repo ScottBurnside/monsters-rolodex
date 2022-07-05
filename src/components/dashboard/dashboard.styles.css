@@ -66,3 +66,12 @@
 .team-button:hover{
     cursor: pointer;
 }
+
+.list {
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
