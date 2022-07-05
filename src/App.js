@@ -33,10 +33,9 @@ class App extends Component {
   render() {
     const { monsters, searchField, costsLabels, costsValues, cost} = this.state; 
     const filteredMonsters = monsters.filter(monster => 
-      monster.name.toLowerCase().includes(searchField.toLowerCase())
+      monster?.name.toLowerCase().includes(searchField.toLowerCase())
     );
     const costData = {labels: costsLabels, data: costsValues};
-    console.log(costsLabels);
     return (
       <div className="App">
         <img alt="logo" src={`https://id.enthuse-test.com/sso/static/common/images/enthuse/enthuse_logo_horizontal.svg`} /> 

@@ -6,30 +6,30 @@ import { Pie, Line } from 'react-chartjs-2';
 import './dashboard.styles.css';
 
 export const Dashboard = props => (
-    <div class="list">
-        <div class="dashboard-card">
-            <div class="dashboard-card-header">
-                <div class="header-text">
+    <div className="list">
+        <div className="dashboard-card">
+            <div className="dashboard-card-header">
+                <div className="header-text">
                     <span>Jira</span>
                 </div>
-                {/* <div class="team-button">
+                {/* <div className="team-button">
                     <span>ELK</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Gizmo</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Platform</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>ELK</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Gizmo</span>
                 </div> */}
             </div>
-            <div class="dashboard-card-content">
-                <div class="info-content content-child">
+            <div className="dashboard-card-content">
+                <div className="info-content content-child">
                     <span>Sprint Date</span><br />
                     <span>Sprint Goals</span>
                     <ul>
@@ -37,7 +37,7 @@ export const Dashboard = props => (
                         <li>goal2</li>
                     </ul>
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     <Pie data={{
                         labels: ['Bugs', 'Features', 'Other'],
                         datasets: [{
@@ -56,7 +56,7 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
@@ -73,7 +73,7 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     <Pie data={{
                         labels: ['Bugs', 'Features', 'Other'],
                         datasets: [{
@@ -94,29 +94,29 @@ export const Dashboard = props => (
                 </div>
             </div>
         </div>
-        <div class="dashboard-card">
-            <div class="dashboard-card-header">
-                <div class="header-text">
+        <div className="dashboard-card">
+            <div className="dashboard-card-header">
+                <div className="header-text">
                     <span>Reg</span>
                 </div>
-                {/* <div class="team-button">
+                {/* <div className="team-button">
                     <span>SSO</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Activity</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>F&D</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Payment</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Reg</span>
                 </div> */}
             </div>
-            <div class="dashboard-card-content">
-                <div class="content-child">
+            <div className="dashboard-card-content">
+                <div className="content-child">
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
@@ -133,7 +133,7 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
@@ -150,7 +150,7 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
@@ -167,34 +167,34 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     stats
                 </div>
             </div>
         </div>
-        <div class="dashboard-card">
-            <div class="dashboard-card-header">
-                <div class="header-text">
+        <div className="dashboard-card">
+            <div className="dashboard-card-header">
+                <div className="header-text">
                     <span>AWS</span>
                 </div>
-                {/* <div class="team-button">
+                {/* <div className="team-button">
                     <span>ELK</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Gizmo</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Platform</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>ELK</span>
                 </div>
-                <div class="team-button">
+                <div className="team-button">
                     <span>Gizmo</span>
                 </div> */}
             </div>
-            <div class="dashboard-card-content">
-                <div class="content-child">
+            <div className="dashboard-card-content">
+                <div className="content-child">
                     <Line data={{
                         labels: props.costData.labels,
                         datasets: [{
@@ -211,7 +211,7 @@ export const Dashboard = props => (
                             maintainAspectRatio: false,
                         }} />
                 </div>
-                <div class="content-child">
+                <div className="content-child">
                     stats
                 </div>
             </div>
