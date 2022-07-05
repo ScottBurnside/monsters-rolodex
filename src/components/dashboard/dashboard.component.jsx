@@ -5,7 +5,7 @@ import { Pie, Line } from 'react-chartjs-2';
 
 import './dashboard.styles.css';
 
-export const Dashboard = (props) => (
+export const Dashboard = props => (
     <div class="dashboard">
         <h1>Dashboard</h1>
         <div class="dashboard-card">
@@ -197,10 +197,10 @@ export const Dashboard = (props) => (
             <div class="dashboard-card-content">
                 <div class="content-child">
                     <Line data={{
-                        labels: [1, 2, 3, 4, 5],
+                        labels: props.costData.labels,
                         datasets: [{
-                            label: 'My First Dataset',
-                            data: [65, 59, 80, 81, 56, 55, 40],
+                            label: 'Costs',
+                            data: props.costData.data,
                             fill: false,
                             borderColor: '#ff7f00',
                             tension: 0.1

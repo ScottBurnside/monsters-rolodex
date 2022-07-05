@@ -9,12 +9,18 @@ class App extends Component {
     super();
     this.state = {
       monsters: [],
-      searchField: ''
+      searchField: '',
+      costsLabels: [],
+      costsValues: [],
     };
 
   }
 
   componentDidMount(){
+    fetch('https://e272-86-180-175-202.eu.ngrok.io/v1/costs')
+    .then(response => response.json())
+    .then(data => this.setState({costsLabels: data.labels, costsValues: data.data}));
+
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
@@ -25,10 +31,12 @@ class App extends Component {
   }
   
   render() {
-    const { monsters, searchField } = this.state; 
+    const { monsters, searchField, costsLabels, costsValues, cost} = this.state; 
     const filteredMonsters = monsters.filter(monster => 
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     );
+    const costData = {labels: costsLabels, data: costsValues};
+    console.log(costsLabels);
     return (
       <div className="App">
         <img alt="logo" src={`https://id.enthuse-test.com/sso/static/common/images/enthuse/enthuse_logo_horizontal.svg`} /> 
@@ -38,7 +46,7 @@ class App extends Component {
           handleChange={this.handleChange}
         />
         <CardList monsters={filteredMonsters}/>
-        <Dashboard/>
+        <Dashboard costData={costData}/>
       </div>
     );
   }
