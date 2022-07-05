@@ -42,7 +42,7 @@ export const Dashboard = props => (
                     <Pie data={{
                         labels: ['Bugs', 'Features', 'Other'],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Ticket Type Commitment',
                             data: [300, 50, 100],
                             backgroundColor: [
                                 'rgb(255, 99, 132)',
@@ -61,7 +61,7 @@ export const Dashboard = props => (
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Burn Up Chart',
                             data: [65, 59, 80, 81, 56, 55, 40],
                             fill: false,
                             borderColor: '#ff7f00',
@@ -78,7 +78,7 @@ export const Dashboard = props => (
                     <Pie data={{
                         labels: ['Bugs', 'Features', 'Other'],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Ticket Type Delivered',
                             data: [300, 50, 100],
                             backgroundColor: [
                                 'rgb(255, 99, 132)',
@@ -121,7 +121,7 @@ export const Dashboard = props => (
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Diagram',
                             data: [65, 59, 80, 81, 56, 55, 40],
                             fill: false,
                             borderColor: '#ff7f00',
@@ -138,7 +138,7 @@ export const Dashboard = props => (
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Bugs',
                             data: [65, 59, 80, 81, 56, 55, 40],
                             fill: false,
                             borderColor: '#ff7f00',
@@ -155,7 +155,7 @@ export const Dashboard = props => (
                     <Line data={{
                         labels: [1, 2, 3, 4, 5],
                         datasets: [{
-                            label: 'My First Dataset',
+                            label: 'Diagram',
                             data: [65, 59, 80, 81, 56, 55, 40],
                             fill: false,
                             borderColor: '#ff7f00',
