@@ -17,11 +17,11 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch('https://e272-86-180-175-202.eu.ngrok.io/v1/costs')
-    //.then(response => response.json())
-    .then(data => this.setState({costsLabels: data.labels, costsValues: data.data}));
+    fetch('https://metrics.enthuse-test.com/v1/costs')
+    .then(response => response.json())
+    .then(data => this.setState({costsLabels: data[0].labels, costsValues: data[0].data}));
 
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://metrics.enthuse-test.com/v1/metrics')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }));
   }
